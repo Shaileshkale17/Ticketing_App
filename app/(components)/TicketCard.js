@@ -5,7 +5,6 @@ import ProgressDispaly from "./ProgressDispaly";
 import StatusDispaly from "./StatusDispaly";
 import { format } from "timeago.js";
 const TicketCard = ({ ticket }) => {
-  console.log(ticket._id);
   return (
     <div className="flex flex-col bg-card hover:bg-card-hover rounded-md shadow-lg p-3 m-2">
       <div className="flex mb-3">

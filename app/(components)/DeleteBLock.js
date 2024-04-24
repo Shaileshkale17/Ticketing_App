@@ -6,13 +6,12 @@ import { useRouter } from "next/navigation";
 const DeleteBLock = ({ id }) => {
   const router = useRouter();
   const deleteTckets = async () => {
-    const res = await fetch(`http://localhost:3000/api/Ticket/${id}`, {
+    const res = await fetch(`/api/Ticket/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
       router.refresh();
     }
-    console.log("Ticket deleted successfully", res.ok);
   };
   return (
     <FontAwesomeIcon
